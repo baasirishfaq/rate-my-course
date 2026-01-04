@@ -1,16 +1,61 @@
-# React + Vite
+# Rate My Course
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, student driven course review platform that allows users to search courses, read reviews, and submit feedback on university courses.  
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
 
-## React Compiler
+- 🔍 Search courses by code or name
+- ⭐ View average ratings and review counts
+- 📝 Submit course reviews with ratings, workload, and difficulty
+- 👍 Mark reviews as helpful
+- 📊 Automatically updates course averages
+- 📱 Responsive, mobile-friendly UI
+- 🧪 **Demo mode** can run without backend when Firebase is not configured
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## 🛠 Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **Frontend:** React, Vite
+- **Styling:** Tailwind CSS
+- **Backend / Database:** Firebase Firestore
+---
+
+## 🚀 Run it
+
+When Firebase credentials are **not** configured, the app runs in **demo mode**:
+- Displays a sample course
+- Allows UI interaction
+- Prevents real database writes
+
+---
+
+## 📦 Installation & Setup
+
+### 1️⃣ Clone the repository
+```bash
+git clone https://github.com/baasirishfaq/rate-my-course.git
+
+cd rate-my-course
+
+# 2️⃣ Install dependencies
+
+npm install
+
+# 3️⃣ Configure Firebase
+
+# Create a new Firebase project and get your configuration details.
+
+# Then, update the placeholders in `src/firebase.js` with your actual credentials.
+
+# The app will run in full mode (not demo mode) once configured.
+
+# 4️⃣ Start the application
+
+npm run dev
+
+
+> ⚠️ This project is under update and **not affiliated with any university**.  
+
